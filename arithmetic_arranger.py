@@ -8,7 +8,7 @@ def arithmetic_arranger(problems, *args):
 		display_answers = False
 
 	if (len(problems) > 5):
-		print("Error: Too many problems.")
+		return "Error: Too many problems."
 	else:
 
 		# will be used to calculate the longest operand 
