@@ -30,7 +30,7 @@ def arithmetic_arranger(problems, *args):
 
 
 			if (current[1] != "+" and current[1] != "-"):
-				return "Error: Operators must be '+' or '-'."
+				return "Error: Operator must be '+' or '-'."
 			
 			try:
 				operand_1 = int(current[0])
