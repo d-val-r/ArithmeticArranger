@@ -113,10 +113,10 @@ def arithmetic_arranger(problems, *args):
 				return_value += f"{totals[i]:>{2+longest_per_equation[i]}}    "
 
 
-		# Remove the last 4 spaces added by the above loop; this
-		# is done to match the exact whitespace requirements in the 
-		# project manafest
-		return_value = return_value[:len(return_value)-4]
+			# Remove the last 4 spaces added by the above loop; this
+			# is done to match the exact whitespace requirements in the 
+			# project manafest
+			return_value = return_value[:len(return_value)-4]
 
 	return return_value
 
