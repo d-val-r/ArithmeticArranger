@@ -36,7 +36,7 @@ def arithmetic_arranger(problems, *args):
 				operand_1 = int(current[0])
 				operand_2 = int(current[2])
 			except: # converting to an int failed
-				return "Error: Numbers must contain only digits"
+				return "Error: Numbers must only contain digits."
 
 			# if the conversion to ints failed, the function would have
 			# returned, never reaching this point
