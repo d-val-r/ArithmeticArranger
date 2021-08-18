@@ -80,18 +80,32 @@ def arithmetic_arranger(problems, *args):
 		for i in range(len(top_operands)):
 		    return_value += f"{top_operands[i]:>{2+longest_per_equation[i]}}    "
 
+		
+		# Remove the last 4 spaces added by the above loop; this
+		# is done to match the exact whitespace requirements in the 
+		# project manafest
 		return_value = return_value[:len(return_value)-4]
 		return_value += "\n"
 
 		for i in range(len(operators)):
 		    return_value += f"{operators[i]} {bottom_operands[i]:>{longest_per_equation[i]}}    "
 
+
+		# Remove the last 4 spaces added by the above loop; this
+		# is done to match the exact whitespace requirements in the 
+		# project manafest
 		return_value = return_value[:len(return_value)-4]
 		return_value += "\n"
 
 		for i in range(len(longest_per_equation)):
 			return_value += ("-" * (longest_per_equation[i] + 2))
 			return_value += "    "
+
+
+		# Remove the last 4 spaces added by the above loop; this
+		# is done to match the exact whitespace requirements in the 
+		# project manafest
+		return_value = return_value[:len(return_value)-4]
 		
 		if (display_answers):
 			return_value += "\n"
